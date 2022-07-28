@@ -28,7 +28,7 @@ public class ChoHan
 
       areSame = compareNames(player1, player2);
 
-      if (areSame == true) {
+      if (areSame) {
          player1.setName(player1.getName() + "1");
          player2.setName(player2.getName() + "2");
       }
@@ -55,11 +55,7 @@ public class ChoHan
    }
 
    public static boolean compareNames(Player player1, Player player2) {
-      if (player1.getName().equalsIgnoreCase(player2.getName())) {
-         return true;
-      }
-
-      return false;
+      return player1.getName().equalsIgnoreCase(player2.getName());
    }
    
    /**
